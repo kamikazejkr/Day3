@@ -1,0 +1,26 @@
+#include <stdio.h>
+#include<stdlib.h>
+int comp(int a,int b,int c);
+int main()
+{
+    int a,b,c,great;
+    printf("\nEnter the numbers to be compared\n");
+    scanf("%d%d%d",&a,&b,&c);
+    great=comp(a,b,c);
+    printf("\nThe largest of the three numbers is : %d\n",great);
+    return 0;
+}
+int comp(int a,int b,int c)
+{
+    if(a>b&&a>c)
+    return a;
+    else if(b>a&&b>c)
+    return b;
+    else if(c>a&&c>b)
+    return c;
+    else
+    {
+        printf("\nAll the numbers are equal.\n");
+        exit(0);
+    }    
+}
