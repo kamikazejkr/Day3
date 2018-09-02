@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include<stdlib.h>
+int comp(int a,int b);
+int main()
+{
+    int a,b,great;
+    printf("\nEnter the two numbers to be compared\n");
+    scanf("%d%d",&a,&b);
+    great=comp(a,b);
+    printf("\nThe largest of two numbers is : %d\n",great);
+    return 0;
+}
+int comp(int a,int b)
+{
+    if(a>b)
+    return a;
+    else if(b>a)
+    return b;
+    else
+    {
+        printf("\nBoth the numers are equal.\n");
+        exit(0);
+    }    
+}
