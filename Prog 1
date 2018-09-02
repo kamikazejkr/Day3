@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main()
+{
+    int a,b,c;
+    printf("\nEnter the two integers to be added\n");
+    scanf("%d%d",&a,&b);
+    c=a+b;
+    printf("\nThe addition of two integers is : %d\n",c);
+    return 0;
+}
