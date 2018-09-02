@@ -1,0 +1,17 @@
+#include <stdio.h>
+float sum(float a,float b);
+int main()
+{
+    float a,b,addition;
+    printf("\nEnter the two numbers to be added\n");
+    scanf("%f%f",&a,&b);
+    addition=sum(a,b);
+    printf("\nThe addition of two numbers is : %f\n",addition);
+    return 0;
+}
+float sum(float a,float b)
+{
+    float addition;
+    addition=a+b;
+    return addition;
+}
